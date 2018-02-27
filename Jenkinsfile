@@ -9,11 +9,6 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Add Yarn') {
-            steps {
-                sh 'npm i -g yarn'
-            }
-        }
         stage('Build') { 
             steps {
                 sh 'yarn install' 
